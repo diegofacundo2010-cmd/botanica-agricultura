@@ -992,6 +992,22 @@
   }
   .qr-placeholder p{font-size:0.82rem; color:#A8C9B5;}
 
+  .qr-real{
+    background:var(--blanco-roto);
+    border-radius:var(--radio-md);
+    padding:20px;
+    display:flex;
+    justify-content:center;
+  }
+  .qr-real img{width:160px; height:160px;}
+  .qr-url{
+    text-align:center;
+    font-size:0.78rem;
+    color:#A8C9B5;
+    margin-top:12px;
+    word-break:break-all;
+  }
+
   .footer-final{
     border-top:1px solid rgba(250,247,240,0.15);
     padding-top:28px;
@@ -1497,8 +1513,8 @@
         <p>El hongo comestible más cultivado del mundo. Se desarrolla sobre un sustrato de compost especialmente preparado y fermentado.</p>
       </div>
       <div class="hongo-card">
-        <div class="hongo-svg">
-          <svg viewBox="0 0 100 100" width="70%"><path d="M50 80C50 80 20 70 20 45C20 30 35 22 50 30C65 22 80 30 80 45C80 70 50 80 50 80Z" fill="#A8A29E"/><rect x="46" y="78" width="8" height="14" rx="3" fill="#EDE6DD"/></svg>
+        <div class="hongo-svg hongo-svg-foto">
+          <img src="img/seta-ostra.jpeg" alt="Setas de ostra creciendo sobre tronco" loading="lazy">
         </div>
         <h4>Seta de ostra</h4>
         <p class="hongo-cientifico"><em>Pleurotus ostreatus</em></p>
@@ -1776,9 +1792,10 @@
       </div>
       <div class="qr-bloque">
         <h3 class="titulo-claro">Accede desde tu móvil</h3>
-        <div class="qr-placeholder" id="qrPlaceholder">
-          <p>El código QR se genera automáticamente al publicar con la URL final del sitio.</p>
+        <div class="qr-real">
+          <img src="img/qr-pagina.png" alt="Código QR de acceso a la página web del proyecto" width="180" height="180">
         </div>
+        <p class="qr-url">diegofacundo2010-cmd.github.io/botanica-agricultura</p>
       </div>
     </div>
   </div>
